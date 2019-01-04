@@ -1,14 +1,14 @@
-import os
-import sys
-import spotipy
-import spotipy.util as util
-
 #This is a small script that gets the currently playing song from spotify and removes it from your music library,
 #then skips to the next track
 
 #Enjoy cleaning out your music library! This works very well when mapped to an unused macro key on your keyboard.
 
 #Check the readme for more info!
+
+import os
+import sys
+import spotipy
+import spotipy.util as util
 
 def main():
 	username = 'XXXXXXXXXXX' 
