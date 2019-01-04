@@ -5,13 +5,14 @@ import spotipy.util as util
 
 #This is a small script that gets the currently playing song from spotify and removes it from your music library, then skips to the next track
 #Enjoy cleaning out your music library! This works very well when mapped to an unused macro key on your keyboard.
+#Check the readme for more info!
 
 def main():
-	username = 'XXXXXXXXXXX' #Go to your Spotify profile and click the circle button>Share>Copy Spotify URI> spotify:user:XXXXXXXXXXX <-- Use these numbers only
-	scope = "user-read-currently-playing user-library-modify user-modify-playback-state" # Scopes used for the script separated by a space, you can find more of these on the Spotify Dev site
-	CLIENT_ID = 'XXXXXXXXXXXXXXXXX' #Get it from the Spotify Dev site on your app page
-	CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXXXX' #Get it from the Spotify Dev site on your app page
-	redirect_uri = "http://google.com/" #The redirect url that you used when making your app (I used google)
+	username = 'XXXXXXXXXXX' 
+	scope = "user-read-currently-playing user-library-modify user-modify-playback-state"
+	CLIENT_ID = 'XXXXXXXXXXXXXXXXX'
+	CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXXXX'
+	redirect_uri = "http://google.com/"
 
 	#Authenticate the token using spotipy
 	token = util.prompt_for_user_token(username, scope, CLIENT_ID, CLIENT_SECRET, redirect_uri)
