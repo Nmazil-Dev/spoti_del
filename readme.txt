@@ -1,5 +1,5 @@
 
-#This is a small script that uses the spotipy library.
+#This is a small script that uses the spotipy library and PySimpleGUIWx.
 #It gets the currently playing song from spotify and removes it from your music library, then skips to the next track
 #Enjoy cleaning out your music library! This works very well when mapped to an unused macro key on your keyboard.
 
