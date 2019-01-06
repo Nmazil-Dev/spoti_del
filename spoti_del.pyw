@@ -45,7 +45,7 @@ def main():
 	#Uses PySimpleGuiWX to display the song what was deleted in a system tray bubble
 	def sys_tray():
 		tray = sg.SystemTray()
-		tray.ShowMessage('Spoti_Rem', 'Deleted ' + song_name)
+		tray.ShowMessage('Spoti_Del', 'Deleted ' + song_name)
 		
 
 
