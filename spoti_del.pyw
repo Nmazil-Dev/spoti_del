@@ -42,7 +42,7 @@ def main():
 		delete_track = sp.current_user_saved_tracks_delete(del_id)
 		sp.next_track()
 
-	#Uses PySimpleGuiWX to display the song what was deleted in a system tray bubble
+	#Uses PySimpleGuiWX to display the song that was deleted in a system tray bubble
 	def sys_tray():
 		tray = sg.SystemTray()
 		tray.ShowMessage('Spoti_Del', 'Deleted ' + song_name)
